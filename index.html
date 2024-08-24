@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Rafael</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" media="screen" />
+</head>
+<body>
+    <header class="cabecalho">
+        <nav>
+            <img href="index.html" src="./assets/iconeAlura.png">
+        </nav>
+    </header>
+    <main class="container">
+        <section class="container__conteudo">
+            <div class="container__input">
+                <textarea class="container__text" placeholder="Digite Seu Texto..." id="textoDigitado"></textarea>
+            </div>
+            <section>
+                <div class="container__descricao">
+                    <a class="container__info-text">
+                        <img src="./assets/pontoImg.png" alt="Ícone de ponto">
+                        Apenas letras minúsculas e sem acento.
+                    </a>
+                </div>
+                <div class="container__info">
+                    <a class="container__bt1" id="btCriptografar">
+                        Criptografar
+                    </a>
+                    <a class="container__bt2" id="btDescriptografar">
+                        Descriptografar
+                    </a>
+                </div>
+            </section>
+        </section>
+        <div class="container__resultado" id="resultadoDiv">
+            <a class="container__resultado-text" id="resultadoTexto">
+                <img src="./assets/imgSite.jpg" alt="Imagem resultante">
+                <span class="texto-grande">Nenhuma mensagem encontrada.</span> 
+                <br>
+                <span class="texto-pequeno">Digite um texto que você deseja criptografar ou descriptografar.</span>
+            </a>
+        </div>
+        <div class="container__resultado" id="resultadoCriptografado" style="display: none;">
+            <a class="container__resultado-text2" id="resultadoTextoCripto"></a>
+            <button class="container__resultado__button" id="copiarCriptoButton">Copiar</button>
+        </div>
+    </main>
+    <script src="app.js" defer></script>
+</body>
+<footer class="rodape">
+    <p>
+        Desenvolvido por Rafael Sampaio
+    </p>
+</footer>
+</html>
